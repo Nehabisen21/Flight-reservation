@@ -37,7 +37,6 @@ pipeline {
                     cd FlightReservationApplication
                     docker build . -t neha2108/flight-reservation-app:latest
                     docker push neha2108/flight-reservation-app:latest
-                    docker rmi `docker image list -aq`
                 '''
             }
         }
